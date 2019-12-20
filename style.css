@@ -1,13 +1,8 @@
 body {
-    background-color: lightblue;
+	color:#F1F1F1;
+	background-color:#181A1B;
 }
 
-h1 {
-    color:white;
-    text-align: center;
-}
-
-p {
-    font-family: verdana;
-    font-size: 20px;
+a {
+	color:#F1F1F1;
 }

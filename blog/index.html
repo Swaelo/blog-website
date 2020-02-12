@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<script src="http://www.swaelo.com/HTMLInclude.js"></script>
+	<head>
+		<link rel="icon" href="../favi.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="../style.css">
+		<title>Blog</title>
+	</head>
+	<body>
+		<div w3-include-html="../navigation.html"></div>
+		<script>includeHTML();</script>
+		<div class="row">
+			<div class="leftcolumn">
+				<div class="card">
+					<h2>Pong Update 1</h2>
+					<h5>12-Feb-2020</h5>
+					<p>Today I've made a some big updates to the ball movement in my pong game.</br>
+					Previously, I had a couple of float values (XDirection and YDirection) for tracking the balls trajectory in each direction.</br>
+					Whenever the ball collided with something on the table, I would adjust these values accordingly, and then at the end of each game update I would offset the balls position with these values to move it around the table.</p>
+					<script src="https://gist.github.com/Swaelo/7d51dfb51a09b5bcabc8feb2632e9aa5.js"></script>
+					<p>I have now added a rigidbody component to the ball which is now used to handle the balls movement.</br>
+					To make changes to the balls direction and speed forces are now applied to this rigidbody component.</br>
+					I have also made some changes in how the ball reacts when colliding with the paddles.</br>
+					If the ball collides with a paddle and that paddle is moving, force is applied to the ball based on the movement direction of the paddle to change the balls vertical velocity.</br>
+					If the paddle is not moving at all, a small random value is either added or taken away from the balls vertical velocity to add some randomness to the game.</p>
+					<script src="https://gist.github.com/Swaelo/88262209e3f56bc609c756d187bf44fe.js"></script>
+					<p>Firstly, the small change of making small random adjustments to the balls vertical velocity when colliding with a stationary paddle prevents the game from reaching a kind of dead state if the ball is moving in a straight line and neither player wants to move their paddle.</br>
+					Secondly, changing the vertical velocity of the ball based on the movement of the paddles adds a lot more depth to the game, allowing players to add spin to the ball, making it harder for their opponents to guess where the ball is going to go.</br>
+					In my next update, I will be making some audio-visual updates to the game.</br>
+					This will include some sound effects, particle effects, shader effects and possibly some music will be added to the game, so stay tuned.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

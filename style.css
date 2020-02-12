@@ -1,8 +1,22 @@
 body {
+	font-family: Arial;
 	color:#F1F1F1;
 	background-color:#181A1B;
 }
 
-a {
-	color:#F1F1F1;
+a, h1, p {
+	color:grey;
+}
+
+/*Posts Column*/
+.leftcolumn {
+    float: left;
+    width: 50%;
+}
+
+/*Post Card*/
+.card {
+    background-color: #111;
+    padding: 20px;
+    margin-top: 20px;
 }

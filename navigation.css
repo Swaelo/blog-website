@@ -1,25 +1,69 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+/*Navbar container*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
 }
 
-li {
-  float: left;
+/*Links inside the navbar*/
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-li a {
-  display: block;
-  font-weight: bold;
-  color: grey;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* dropdown menu container */
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+/* dropdown menu button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: grey;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Add a background color to navbar links being moused over */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* links inside the dropdown menu */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* show the dropdown menu only when the mouse is hovered over it */
+.dropdown:hover .dropdown-content {
+    display: block;
 }

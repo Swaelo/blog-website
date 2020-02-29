@@ -3,22 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Swaelo Pong</title>
+    <title>Swaelo Breakout</title>
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script src="http://www.swaelo.com/HTMLInclude.js"></script>
-    <link rel="icon" href="../favi.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="../style.css"/>
+    <link rel="icon" href="../../favi.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../../style.css"/>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
-    <div w3-include-html="../navigation.html"></div>
+    <div w3-include-html="../../navigation.html"></div>
     <script>includeHTML();</script>
   </br>
+
+    A clone of the classic Atari videogame <a href="https://en.wikipedia.org/wiki/Breakout_(video_game)" target="_blank">Breakout</a>.</br>
+    You can view the source code <a href="https://github.com/Swaelo/Swaelo-Breakout" target="_blank">here</a>.
+
     <div class="webgl-content">
     <div id="unityContainer" style="width: 960px; height: 600px; margin: 0; position: absolute; left: 50%; -ms-transform: translateX(-50%); transform: translateX(-50%);"></div>
     </div>
+
   </body>
 </html>

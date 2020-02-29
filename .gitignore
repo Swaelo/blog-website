@@ -1,2 +1,6 @@
-play/Build/*
-play/TemplateData/*
+games/pong/Build/*
+games/pong/TemplateData/*
+games/breakout/Build/*
+games/breakout/TemplateData/*
+games/robotron/Build/*
+games/robotron/TemplateData/*

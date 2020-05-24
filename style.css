@@ -8,15 +8,29 @@ a, p, h1, h2, h3, h4, h5, h6 {
 	color:grey;
 }
 
-/*Posts Column*/
-.leftcolumn {
-    float: left;
-    width: 50%;
+.middlecolumn {
+	background-color: #333;
+	margin: auto;
+	width: 65%;
+	padding: 10px;
+}
+
+/*card holder*/
+.cardholder {
+	margin-top: 50px;
 }
 
 /*Post Card*/
 .card {
     background-color: #111;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+/*Override middlecolumn width to 85% for mobile devices*/
+@media only screen and (max-device-width: 480px)
+{
+	.middlecolumn {
+		width: 85%;
+	}
 }

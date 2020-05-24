@@ -1,5 +1,6 @@
 /*Navbar container*/
 .navbar {
+    display: inline;
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
@@ -8,6 +9,24 @@
 /*Links inside the navbar*/
 .navbar a {
     float: left;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Links container*/
+.linkbar {
+    display: inline;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+/*Links inside the link bar*/
+.linkbar a {
+    float: right;
     font-size: 16px;
     color: grey;
     text-align: center;
@@ -35,6 +54,11 @@
 
 /* Add a background color to navbar links being moused over */
 .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+/*background color to linkbar links being moused over*/
+.linkbar a:hover {
     background-color: #111;
 }
 

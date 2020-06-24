@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<script src="http://www.swaelo.com/HTMLInclude.js"></script>
+	<script src="HTMLInclude.js"></script>
 	<head>
 		<link rel="icon" href="../favi.ico" type="image/x-icon"/>
 		<link rel="stylesheet" href="../style.css">
@@ -19,7 +19,7 @@
 						I've made an alternate version of the generation algorithm which places all dungeon rooms adjacent to one another, so the player should be able to travel directly from one room to the next, without having to waste time travelling through corridors.</br>
 						I think this works much better, I'm quite happy with how the layouts appear using this new method that I've created.</br>
 						Heres a quick peek at how it looks when trying it out.</br></br>
-						<img src="http://swaelo.com/files/CompactedGenExample.gif" alt="Compated Dungeon Generation GIF" style="width:50%;height:50%;"></br></p>
+						<img src="files/CompactedGenExample.gif" alt="Compacted Dungeon Generation GIF" style="width:50%;height:50%;"></br></p>
 				</div>
 
 				<div class="card">
@@ -41,9 +41,9 @@
 
 						Once all the enemy AI stuff has been sorted out, the other big task that this type of game is going to require is some form of procedural level generation.</br>
 						This is something I got started on this week, and I already have a little random dungeon layout generation sample project that I can show off.</br>
-						You can try out the random dungeon generator <a href="http://swaelo.com/projects/dungeon-generation/" target="_blank">here</a>, this is just the first type of procedural generation I was able to implement.</br>
+						You can try out the random dungeon generator <a href="projects/dungeon-generation/" target="_blank">here</a>, this is just the first type of procedural generation I was able to implement.</br>
 						Can also just watch this gif of me messing around with it to show you what kinda layouts it can currently generate.</br>
-						<img src="http://swaelo.com/files/SpacedGenExample.gif" alt="Random Dungeon Generation GIF" style="width:50%;height:50%;"></br>
+						<img src="files/SpacedGenExample.gif" alt="Random Dungeon Generation GIF" style="width:50%;height:50%;"></br>
 						It doesnt seem that bad, but I'll probably be trying out some other forms of layout generation so I can see what works best for me before I make the final decision on what type of generation I will be using for the game.</br>
 						Stay tuned for more updates coming soon, first thing I want to try next is binary space partitioning for dungeon layout - then I might see if I can get some first super basic gameplay demo up and running.</p>
 				</div>
@@ -53,12 +53,12 @@
 					<h5>10-May-2020</h5>
 					<p>I've added support for the <a href="https://en.wikipedia.org/wiki/Theta*" target="_blank">Theta* Algorithm</a>, this was fairly quick and easy to add in as its very similar to A*.</br>
 						Here's a few short gifs showing off what each of the pathfinding algorithms look like while they do their thing.</p>
-						<h4>A* Example</h4> <img src="http://swaelo.com/files/AStar.gif" alt="A* GIF" style="width:50%;height:50%;"></br>
-						<h4>Theta* Example</h4> <img src="http://swaelo.com/files/ThetaStar.gif" alt="Theta* GIF" style="width:50%;height:50%;"></br>
-						<h4>Dijkstra's Example</h4> <img src="http://swaelo.com/files/Dijkstras.gif" alt="Dijkstras GIF" style="width:50%;height:50%;">
+						<h4>A* Example</h4> <img src="files/AStar.gif" alt="A* GIF" style="width:50%;height:50%;"></br>
+						<h4>Theta* Example</h4> <img src="files/ThetaStar.gif" alt="Theta* GIF" style="width:50%;height:50%;"></br>
+						<h4>Dijkstra's Example</h4> <img src="files/Dijkstras.gif" alt="Dijkstras GIF" style="width:50%;height:50%;">
 						<p>After running some tests and checking out how these 3 algorithms compare against one another, I've found that A* is considerably faster at finding a pathway to the target node.</br>
 							However its not perfect, although A* can find a path in a fraction of the time it takes for the other two, the pathways created by A* are sometimes less than ideal, as seen in this example.</br></br>
-							<img src="http://www.swaelo.com/files/NonOptimalPathExample.png" alt="A* Non Optimal Path Example" style="width:50%;height:50%;"></br></br>
+							<img src="files/NonOptimalPathExample.png" alt="A* Non Optimal Path Example" style="width:50%;height:50%;"></br></br>
 							This isnt the worst thing in the world though, because of damn faster this is at finding some halfway decent pathway I think I may be able to use this to find a path, then perform some processing on that pathway to clean it up a bit, we may end up with something much better.</p>
 				</div>
 
@@ -67,7 +67,7 @@
 					<h5>09-May-2020</h5>
 					<p>I've started work on a new little project in which I'm going to implement a bunch of different pathfinding algorithms so they can easily be tested and compared against one another.</br>
 						The first version is live now, and currently supports <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Dijkstra's Algorithm</a> and the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">A* search algorithm</a>.</br>
-						You can try it out <a href="http://swaelo.com/projects/pathfinding/" target="_blank">here</a>.</p>
+						You can try it out <a href="projects/pathfinding/" target="_blank">here</a>.</p>
 				</div>
 
 				<div class="card">
@@ -76,7 +76,7 @@
 					<p>It's been a good couple months since my last blog post, we moved into a new house and unfortunately NBN wasnt hooked up at the new place yet and we had to wait a good while for them to hook it up for us.</br>
 						As I host the website and everything else I do completely on my own its meant this websites also been offline for the whole time.  But happily now were back online so I can get back to work now :)</br>
 						Now while I was without internet, I was able to finish off the Robotron clone and I was also able to start and finish an Asteroids clone too!</br>
-						You can play Robotron <a href="http://www.swaelo.com/games/robotron/" target="_blank">here</a>, or Asteroids <a href="http://www.swaelo.com/games/asteroids/" target="_blank">here</a>.</p>
+						You can play Robotron <a href="games/robotron/" target="_blank">here</a>, or Asteroids <a href="games/asteroids/" target="_blank">here</a>.</p>
 				</div>
 
 				<div class="card">
@@ -91,7 +91,7 @@
 						Even still, the process of recreating every sprite from Robotron by hand, spacing out sprite sheets, importing into Unity and setting up all the animations with them was a very tiresom process.</br>
 						Working on this on and off while I was able to keep my sanity intact only took me a few days to get everything completed.</br>
 						I'm yet to write a single line of code for this project, but all assets are now ready so I will be able to get started on this now no problem.</p>
-						<img src="http://swaelo.com/files/RobotronAssets.gif" alt="Robotron Art Assets GIF" style="width:50%;height:50%;">
+						<img src="files/RobotronAssets.gif" alt="Robotron Art Assets GIF" style="width:50%;height:50%;">
 				</div>
 
 				<div class="card">
@@ -194,7 +194,7 @@
 					Breakout was the natural evolution after Pong, and was originally released in 1976.</br>
 					Before I get started creating this game, I thought it best to study the mechanics of the original and write up a little design document explaining exactly how everything is going to work.</br></br>
 					Firstly, here's a little mockup image I quickly threw together in mspaint to get a rough idea how the game might look once its done.</br></br></p>
-					<img src="http://swaelo.com/files/BreakoutConcept.png" alt="Breakout Concept" style="width:50%;height:50%;">
+					<img src="files/BreakoutConcept.png" alt="Breakout Concept" style="width:50%;height:50%;">
 
 					<h6>Block Mechanics</h6>
 					<p>There is going to be 5 rows of blocks that the player needs to destroy, with each row being a different color from one another, and each different colored block producing different effects once they have been destroyerd.</br>

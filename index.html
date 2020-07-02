@@ -12,6 +12,27 @@
 			<script>includeHTML();</script>
 
 			<div class="cardholder">
+
+				<div class="card">
+					<h2>Webserver overhauled, new secure domain, roguelike movement and shooting implemented</h2>
+					<h5>02-July-2020</h5>
+					<p>It's been a good long while since my last blog post, there's lots of things that have been keeping me busy lately.</br>
+						For starters, up until just recently I've been running Windows 10 on my server PC and using IIS to run and manage the web server from it.</br>
+						Using this method to run the webserver was causing more and more headaches the longer I kept using it, and there wasnt very much support/tutorials that I could find online to help either.</br>
+						Long story short, the web server is now running Ubuntu and uses Apache2 to manage the web server.</br>
+						Before this I had very little experience using any form of Linux and definitely hadnt ever used Apache before, so there was a lot to learn and a good bit of work I had to do to get everything working properly again.</br></br>
+
+						I've also gone and bought a new .dev domain name and migrated everything over to use that now instead of using .com</br>
+						Getting this to work wasnt without its troubles either, because as it turns out the .dev domain requires HTTPS otherwise it wont work.</br>
+						Figuring out how to make my own SSL certificate and get the web server to use that properly was no simple task and took me quite some time to figure it out.</br></br>
+
+						Lastly, I've done a little bit more work on my <a href="games/roguelike/" target="_blank">roguelike title</a> which is starting to look really good already.</br>
+						Mostly what I've been working on is the player movement / gun controls and shooting, and I'm pretty happy with how its looking so far.</br>
+						Next thing I want to work on for this is to do some big refactoring for the dungeon generation code, because currently it takes quite a long time to generate the dungeon layouts.</br>
+						If I stick to small/medium sized dungeons its not too bad, but trying to go much bigger than a total dungeon size of something like 128x128 tiles the time it takes to generate the dungeon becomes exponential.</br>
+						This honestly shouldnt be too hard for me to drastically improve the time it takes to generate the layouts, I just need to spend some time going through and taking notice what parts of the code cause the most slowdown.</br></p>
+				</div>
+
 				<div class="card">
 					<h2>Been fiddling with the dungeon generation algorithm a bit</h2>
 					<h5>24-May-2020</h5>
